@@ -17,8 +17,8 @@
 
 // Defines the keycodes used by our macros in process_record_user
 enum custom_keycodes {
-  QMKBEST = SAFE_RANGE,
-  QMKURL
+  QWERTY = SAFE_RANGE,
+  EXTRA
 };
 
 /* Qwerty
@@ -46,20 +46,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case QMKBEST:
+    case QWERTY:
       if (record->event.pressed) {
-        // when keycode QMKBEST is pressed
+        // when keycode QWERTY is pressed
         SEND_STRING("QMK is the best thing ever!");
       } else {
-        // when keycode QMKBEST is released
+        // when keycode QWERTY is released
       }
       break;
-    case QMKURL:
+    case EXTRA:
       if (record->event.pressed) {
-        // when keycode QMKURL is pressed
+        // when keycode EXTRA is pressed
         SEND_STRING("https://qmk.fm/" SS_TAP(X_ENTER));
       } else {
-        // when keycode QMKURL is released
+        // when keycode EXTRA is released
       }
       break;
   }
