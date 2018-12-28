@@ -14,6 +14,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include QMK_KEYBOARD_H
+#include "action_layer.h"
+
+enum custom_layers {
+  _QWERTY
+};
 
 // Defines the keycodes used by our macros in process_record_user
 enum custom_keycodes {
@@ -49,7 +54,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case QWERTY:
       if (record->event.pressed) {
         // when keycode QWERTY is pressed
-        SEND_STRING("QMK is the best thing ever!");
+        print("Mode set to QWERTY");
+        set_single_persistent_default_layer(_QWERTY);
       } else {
         // when keycode QWERTY is released
       }
