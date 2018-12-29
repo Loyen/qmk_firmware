@@ -24,8 +24,7 @@ enum custom_layers {
 // Defines the keycodes used by our macros in process_record_user
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
-  FUNCTION,
-  EXTRA
+  FUNCTION
 };
 
 /* Qwerty
@@ -76,14 +75,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       } else {
         // when keycode QWERTY is released
         layer_off(_FUNCTION);
-      }
-      break;
-    case EXTRA:
-      if (record->event.pressed) {
-        // when keycode EXTRA is pressed
-        SEND_STRING("https://qmk.fm/" SS_TAP(X_ENTER));
-      } else {
-        // when keycode EXTRA is released
       }
       break;
   }
