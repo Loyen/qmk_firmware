@@ -37,7 +37,7 @@ enum custom_keycodes {
  * |------+------+------+------+------+------|------+------+------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  | Shift| Shift|  Up  | Enter|
  * |------+------+------+------+------+------+------+------+------+------+------+------+------+------+------|
- * | Func | LCtrl| LSup | Alt  | Space| Space| Space| Space| Space|  Alt | Ctrl | Ctrl | Left | Down | Right|
+ * | Func | LCtrl| LSup | Alt  | Space| Space| Space| Space| Space| Space|  Alt | Ctrl | Left | Down | Right|
  * `--------------------------------------------------------------------------------------------------------'
  */
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
