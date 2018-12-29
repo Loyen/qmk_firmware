@@ -61,19 +61,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case QWERTY:
       if (record->event.pressed) {
-        // when keycode QWERTY is pressed
         print("Mode set to QWERTY");
         set_single_persistent_default_layer(_QWERTY);
-      } else {
-        // when keycode QWERTY is released
       }
       break;
     case FUNCTION:
       if (record->event.pressed) {
-        // when keycode QWERTY is pressed
         layer_on(_FUNCTION);
       } else {
-        // when keycode QWERTY is released
         layer_off(_FUNCTION);
       }
       break;
