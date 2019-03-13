@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |   §  |      |   @  |   £  |   $  |   €  |      |   {  |   [  |   ]  |   }  | Bksp |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |   §  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Del  |
+ * |   §  |      |   @  |   £  |   $  |   €  |      |   {  |   [  |   ]  |   }  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * | Del  |      |      |      |      |      |      |   +  |   ´  |      |   ¨  |  '   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT_preonic_grid( \
   KC_GRV,  ALGR(KC_1), ALGR(KC_2), ALGR(KC_3), ALGR(KC_4), ALGR(KC_5), ALGR(KC_6), ALGR(KC_7), ALGR(KC_8), ALGR(KC_9), ALGR(KC_0), KC_BSPC, \
-  KC_GRV,  KC_1,       KC_2,       KC_3,       KC_4,       KC_5,       KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_DEL,  \
+  KC_GRV,  ALGR(KC_1), ALGR(KC_2), ALGR(KC_3), ALGR(KC_4), ALGR(KC_5), ALGR(KC_6), ALGR(KC_7), ALGR(KC_8), ALGR(KC_9), ALGR(KC_0), KC_DEL,  \
   KC_DEL,  _______,    _______,    _______,    _______,    _______,    _______,    KC_MINS,    KC_EQL,     KC_LBRC,    KC_RBRC,    KC_BSLS, \
   _______, _______,    _______,    _______,    _______,    _______,    _______,    KC_NUHS,    KC_NUBS,    KC_PGUP,    KC_PGDN,    _______, \
   _______, _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY  \
