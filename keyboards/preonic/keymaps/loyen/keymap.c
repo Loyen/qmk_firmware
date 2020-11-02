@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |   ½  |   !  |   "  |   #  |   ¤  |   %  |   &  |   /  |   (  |   )  |   =  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |      |      |      |      |      |      |   ?  |   `  |      |   ^  |  *   |
+ * | Del  |      |      |      |      |      |      |   ?  |   `  |   ~  |   ^  |  *   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |   <  |      |      |      |      |      |   *  |   >  | Home |  End |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -70,11 +70,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_preonic_grid( \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN, KC_RPRN, KC_BSPC, \
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN, KC_RPRN, KC_DEL,  \
-  KC_DEL,  _______, _______, _______, _______, _______, _______, KC_UNDS,   KC_PLUS,   KC_LCBR, KC_RCBR, KC_PIPE, \
-  _______, KC_NUBS, _______, _______, _______, _______, _______, S(KC_NUHS),S(KC_NUBS),KC_HOME, KC_END,  _______, \
-  _______, _______, _______, _______, _______, _______, _______, _______,   KC_MNXT,   KC_VOLD, KC_VOLU, KC_MPLY \
+  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN,       KC_RPRN, KC_BSPC, \
+  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN,       KC_RPRN, KC_DEL,  \
+  KC_DEL,  _______, _______, _______, _______, _______, _______, KC_UNDS,   KC_PLUS,   ALGR(KC_RBRC), KC_RCBR, KC_PIPE, \
+  _______, KC_NUBS, _______, _______, _______, _______, _______, S(KC_NUHS),S(KC_NUBS),KC_HOME,       KC_END,  _______, \
+  _______, _______, _______, _______, _______, _______, _______, _______,   KC_MNXT,   KC_VOLD,       KC_VOLU, KC_MPLY \
 ),
 
 /* Raise
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |   §  |      |   @  |   £  |   $  |   €  |      |   {  |   [  |   ]  |   }  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |      |      |      |      |      |      |   +  |   ´  |      |   ¨  |  '   |
+ * | Del  |      |      |      |      |      |      |   +  |   ´  |   \  |   ¨  |  '   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |   |  |      |      |      |      |      |   '  |   <  | PgUp | PgDn |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -91,11 +91,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_preonic_grid( \
-  KC_GRV,  ALGR(KC_1),    ALGR(KC_2), ALGR(KC_3), ALGR(KC_4), ALGR(KC_5), ALGR(KC_6), ALGR(KC_7), ALGR(KC_8), ALGR(KC_9), ALGR(KC_0), KC_BSPC, \
-  KC_GRV,  ALGR(KC_1),    ALGR(KC_2), ALGR(KC_3), ALGR(KC_4), ALGR(KC_5), ALGR(KC_6), ALGR(KC_7), ALGR(KC_8), ALGR(KC_9), ALGR(KC_0), KC_DEL,  \
-  KC_DEL,  _______,       _______,    _______,    _______,    _______,    _______,    KC_MINS,    KC_EQL,     KC_LBRC,    KC_RBRC,    KC_BSLS, \
-  _______, ALGR(KC_NUBS), _______,    _______,    _______,    _______,    _______,    KC_NUHS,    KC_NUBS,    KC_PGUP,    KC_PGDN,    _______, \
-  _______, _______,       _______,    _______,    _______,    _______,    _______,    _______,    KC_MNXT,    KC_VOLD,    KC_VOLU,    KC_MPLY  \
+  KC_GRV,  ALGR(KC_1),    ALGR(KC_2), ALGR(KC_3), ALGR(KC_4), ALGR(KC_5), ALGR(KC_6), ALGR(KC_7), ALGR(KC_8), ALGR(KC_9),    ALGR(KC_0), KC_BSPC, \
+  KC_GRV,  ALGR(KC_1),    ALGR(KC_2), ALGR(KC_3), ALGR(KC_4), ALGR(KC_5), ALGR(KC_6), ALGR(KC_7), ALGR(KC_8), ALGR(KC_9),    ALGR(KC_0), KC_DEL,  \
+  KC_DEL,  _______,       _______,    _______,    _______,    _______,    _______,    KC_MINS,    KC_EQL,     ALGR(KC_MINS), KC_RBRC,    KC_BSLS, \
+  _______, ALGR(KC_NUBS), _______,    _______,    _______,    _______,    _______,    KC_NUHS,    KC_NUBS,    KC_PGUP,       KC_PGDN,    _______, \
+  _______, _______,       _______,    _______,    _______,    _______,    _______,    _______,    KC_MNXT,    KC_VOLD,       KC_VOLU,    KC_MPLY  \
 ),
 
 /* FUNCTION
